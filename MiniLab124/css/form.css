@@ -1,0 +1,44 @@
+.form_container {
+  width: 50%;
+  height: fit-content;
+  padding: 5% 5% 0 5%;
+  margin-top: 2%;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form_container:hover {
+  transform: scale(1.02);
+}
+
+/* Настройки для мобильных устройств */
+@media only screen and (max-width: 600px) {
+  .form_container {
+    width: 90%;
+    padding: 5% 3%;
+    margin-top: 5%;
+  }
+  .underlined_text {
+    font-size: 14px;
+  }
+}
+
+.underlined_text {
+  margin-left: 0;
+  align-items: center;
+  color: #033169;
+  text-decoration: underline;
+  text-decoration-color: #76ead5;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Свойства цкласса при наведении */
+.underlined_text:hover {
+  cursor: pointer;
+  color: #1f78d1;
+}
